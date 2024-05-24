@@ -115,13 +115,15 @@
 }
 
 .box {
-  width: 400px;
+  width: 250px;
   height: 300px;
+  position: relative;
 }
 
 .box::before {
   content: '';
   position: absolute;
+  display: inline-block;
   inset: 0;
   background: repeating-conic-gradient(
     from var(--a),
@@ -138,6 +140,7 @@
 .box::after {
   content: '';
   position: absolute;
+  display: inline-block;
   inset: 0;
   background: repeating-conic-gradient(
     from var(--a),
